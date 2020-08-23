@@ -7,52 +7,73 @@ namespace appdevehiculos
 
     public class Vehiculo
     {
-        public Vehiculo(String matricula, String modelo, String color, String marca, float precio_alquiler_dias)
+        private string matricula;
+        private string modelo;
+        private string marca;
+        private string color;
+        private double precio_alquiler_dias;
 
+        public Vehiculo(string matricula, string modelo, string marca, string color, double precio)
         {
-            this.Matricula = matricula;
-            this.Color = color;
-            this.Marca = marca;
-            this.Precio_Alquiler_Dias = precio_alquiler_dias;
-
-
+            this.matricula = matricula;
+            this.modelo = modelo;
+            this.marca = marca;
+            this.color = color;
+            this.precio_alquiler_dias = precio;
         }
 
         public Vehiculo()
         {
         }
 
-        public String Matricula;
-
-        public String matricuala
+        public string getMatricula()
         {
-            get { return Matricula; }
-            set { Matricula = value; }
+            return matricula;
         }
 
-        private String Color;
-
-        public String color
+        public void setMatricula(string matricula)
         {
-            get { return Color; }
-            set { Color = value; }
-        }
-        private String Marca;
-
-        public String marca
-        {
-            get { return Marca; }
-            set { Marca = value; }
-        }
-        private float Precio_Alquiler_Dias;
-
-        public float precio_alquiler_dias
-        {
-            get { return Precio_Alquiler_Dias; }
-            set { Precio_Alquiler_Dias = value; }
+            this.matricula = matricula;
         }
 
+        public string getModelo()
+        {
+            return modelo;
+        }
 
+        public void setModelo(string modelo)
+        {
+            this.modelo = modelo;
+        }
 
+        public string getMarca()
+        {
+            return marca;
+        }
+
+        public void setMarca(string marca)
+        {
+            this.marca = marca;
+        }
+
+        public string getColor()
+        {
+            return color;
+        }
+
+        public void setColor(string color)
+        {
+            this.color = color;
+        }
+
+        public double getPrecioDia()
+        {
+            return precio_alquiler_dias;
+        }
+
+        public void setPrecio(double precio)
+        {
+            this.precio_alquiler_dias = precio;
+        }
     }
 }
