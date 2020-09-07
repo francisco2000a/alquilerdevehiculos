@@ -7,7 +7,6 @@ namespace appdevehiculos
     class Lista_Cliente
     {
         public List<Reserva> Reservas { get; set; }
-
-
+        
     }
 }
