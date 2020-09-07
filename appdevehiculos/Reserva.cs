@@ -14,9 +14,7 @@ namespace appdevehiculos
         this.Precio_Total = precio_total;
         this.Indicador_De_Entrega = indicador_de_entrada;
         this.Gasolina = gasolina;
-
-
-
+            
     }
 
     public int Cod_Reserva { get; private set; }
