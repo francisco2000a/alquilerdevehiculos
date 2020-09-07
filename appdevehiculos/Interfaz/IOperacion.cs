@@ -7,7 +7,8 @@ namespace appdevehiculos.Interfaz
     // Creacion de la interfaz para utilizar el patron strategy.
     interface IOperacion
     {
-        List<Vehiculo> listarVehiculo();
+        void listarVehiculo();
+        void findByMatricula(string matricula);
         Boolean registrarVehiculo(Vehiculo vehiculo);
     }
 }
