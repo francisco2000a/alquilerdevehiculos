@@ -74,7 +74,11 @@ namespace appdevehiculos
             } while (opcion == 1 || opcion == 2 || opcion == 3 || opcion == 4 || opcion == 5 || opcion == 6
                      || opcion == 7 || opcion == 8 || opcion == 9 || opcion == 10
                      );
+<<<<<<< HEAD
           
+=======
+
+>>>>>>> db2e0c2826bc26e7d4d9a1d3c1bd61c208bac4f3
             Console.ReadKey();
 
         }
@@ -101,7 +105,8 @@ namespace appdevehiculos
                 Console.WriteLine();
                 Console.WriteLine("Se registro bien el vehiculo!");
                 Console.WriteLine();
-            } else
+            }
+            else
             {
                 Console.WriteLine("No se registro");
             }
@@ -136,7 +141,11 @@ namespace appdevehiculos
             string direccion = Console.ReadLine();
             Console.WriteLine("Ingrese el telefono:");
             string telefono = Console.ReadLine();
+<<<<<<< HEAD
             Cliente clientes = new Cliente(cedula,nombre,direccion,telefono);
+=======
+            Cliente clientes = new Cliente(cedula, nombre, direccion, telefono);
+>>>>>>> db2e0c2826bc26e7d4d9a1d3c1bd61c208bac4f3
             client.addClient(clientes);
         }
 
