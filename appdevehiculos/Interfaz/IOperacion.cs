@@ -10,5 +10,6 @@ namespace appdevehiculos.Interfaz
         void listarVehiculo();
         void findByMatricula(string matricula);
         Boolean registrarVehiculo(Vehiculo vehiculo);
+        Vehiculo darVehiculo(string matricula);
     }
 }

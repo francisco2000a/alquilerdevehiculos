@@ -66,5 +66,26 @@ namespace appdevehiculos.clases
                 Console.WriteLine("-------------");
             }
         }
+
+        public Vehiculo darVehiculo(string matricula)
+        {
+            Vehiculo res_vehiculo = null;
+            try
+            {
+                foreach (var item in carro)
+                {
+                    if (item.Matricula == matricula)
+                    {
+                        res_vehiculo = item;
+                    }
+                }
+
+            }
+            catch (Exception e)
+            {
+
+            }
+            return res_vehiculo;
+        }
     }
 }
